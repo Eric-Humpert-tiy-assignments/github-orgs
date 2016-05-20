@@ -2,13 +2,23 @@
 <html>
   <head>
     <title>GitHub Orgs!</title>
+    <link rel='stylesheet' href='main.css' />
   </head>
   <body>
 
+    <ul class='org-list'>
+      <li>styling test</li>
+    </ul>
 
-    
+
+    <script id='org-template' type ='text/html'>
+      <li>
+        <img src='<%= avatar_url %>' /> <span><%= login %></span>
+      </li>
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.js"></script>
     <script src='scripts.js'></script>
     <script>OrgsView.start()</script>
   </body>
