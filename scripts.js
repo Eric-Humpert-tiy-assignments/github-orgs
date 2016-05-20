@@ -3,13 +3,20 @@ if (this.OrgsView === undefined) this.OrgsView = {};
 
 (function(context) {
 
+  var orgList = $('.org-list');
   var apiData;
 
-  function buildDOMList(obj) {
-
+  function buildDOMList(arr) {
+    arr.forEach(function(obj) {
+      console.log(obj);
+      var templateListItem = $('#org-template').html();
+      console.log("The template being used",templateListItem);
+      var listItem = _.template(templateListItem);
+      console.log('using the template with lodash', listItem);
+      var orgItem = listItem({ avatar: obj.avatar_url, login: obj.login });
+      orgList.append(orgItem);
+    })
   }
-
-  var organizationsList = document.querySelector('#org-list');
 
   function start() {
 

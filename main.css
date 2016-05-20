@@ -52,14 +52,28 @@ table {
   font-family: sans-serif;
   margin: 0 auto;
   text-shadow: white 1px 1px;
+	width: 50%;
+}
+
+img {
+	border-radius: 35px;
+	float: left;
+	padding: 15px;
+	width: 12%;
+	margin-left: 0;
 }
 
 li {
-  border-radius: 5px;
+  border-radius: 15px;
   border: 1px solid #DBDBDB;
   background-color: #F0F0F0;
-  padding: .5em 2em;
+	font-size: 3em;
+	margin: .25em;
+	overflow: auto;
 }
 
-.org-list li img {
+li span {
+	float: left;
+	padding-left: .5em;
+	margin-top: 25px;
 }
