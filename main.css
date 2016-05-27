@@ -67,7 +67,7 @@ li {
   border-radius: 15px;
   border: 1px solid #DBDBDB;
   background-color: #F0F0F0;
-	font-size: 3em;
+	font-size: 250%;
 	margin: .25em;
 	overflow: auto;
 }
@@ -75,5 +75,5 @@ li {
 li span {
 	float: left;
 	padding-left: .5em;
-	margin-top: 25px;
+	margin: 5% auto;
 }
